@@ -14,7 +14,6 @@ const Form = () => {
          role: role,
          full: full,
          email: email,
-        
        };
        fetch("https://apipawan3.herokuapp.com/users", {
          method: "POST",
