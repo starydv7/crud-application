@@ -13,8 +13,8 @@ const Form = () => {
          name: name,
          mobile: mobile,
          role: role,
-           email: email,
-         url:url,
+         email: email,
+         url: url,
        };
        fetch("https://apipawan3.herokuapp.com/users", {
          method: "POST",
