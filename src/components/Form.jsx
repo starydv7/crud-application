@@ -12,7 +12,6 @@ const Form = () => {
          name: name,
          mobile: mobile,
          role: role,
-         full: full,
          email: email,
        };
        fetch("https://apipawan3.herokuapp.com/users", {
@@ -35,7 +34,6 @@ const Form = () => {
           <option value="/">Role</option>
           <option value="FrontEnd">Front_End</option>
           <option value="backend">Backend</option>
-          
         </select>
        
         <input
