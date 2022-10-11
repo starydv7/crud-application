@@ -33,7 +33,11 @@ const Form = () => {
       <form onSubmit={handleSubmit}>
         <label>Role</label>
         <br></br>
-        <select value={role} onChange={(e) => setRole(e.target.value)}>
+        <select
+          value={role}
+          onChange={(e) => setRole(e.target.value)}
+          className={styles.input}
+        >
           <option value="/">Role</option>
           <option value="FrontEnd">Front_End</option>
           <option value="backend">Backend</option>
@@ -70,7 +74,7 @@ const Form = () => {
           className={styles.input}
         />
         <br></br>
-        <button type="submit">Submit</button>
+        <button type="submit" className={styles.btn}>Submit</button>
         <div className="message">{message ? <p>{message}</p> : null}</div>
       </form>
     </div>
