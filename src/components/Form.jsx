@@ -6,13 +6,15 @@ const Form = () => {
     const [email, setEmail] = useState("");
     const [role, setRole] = useState("");
     const [message, setMessage] = useState("");
+    const [url, setUrl] = useState("");
      let handleSubmit = async (e) => {
        e.preventDefault();
        var DetailsObj = {
          name: name,
          mobile: mobile,
          role: role,
-         email: email,
+           email: email,
+         url:url,
        };
        fetch("https://apipawan3.herokuapp.com/users", {
          method: "POST",
@@ -74,7 +76,19 @@ const Form = () => {
           className={styles.input}
         />
         <br></br>
-        <button type="submit" className={styles.btn}>Submit</button>
+        <label>Linkedin</label>
+        <br></br>
+        <input
+          type="url"
+          value={url}
+          placeholder="Linkedin Id"
+          onChange={(e) => setUrl(e.target.value)}
+          className={styles.input}
+              />
+              <br></br>
+        <button type="submit" className={styles.btn}>
+          Submit
+        </button>
         <div className="message">{message ? <p>{message}</p> : null}</div>
       </form>
     </div>
