@@ -29,31 +29,37 @@ const Form = () => {
      };
   return (
     <div className={styles.form}>
-          <form onSubmit={handleSubmit}>
-              <label>Role</label>
+      <h3>Enter Details</h3>
+      <form onSubmit={handleSubmit}>
+        <label>Role</label>
+        <br></br>
         <select value={role} onChange={(e) => setRole(e.target.value)}>
           <option value="/">Role</option>
           <option value="FrontEnd">Front_End</option>
           <option value="backend">Backend</option>
         </select>
-              <br></br>
-              <label>Name</label>
+        <br></br>
+        <label>Name</label>
+        <br></br>
         <input
           type="text"
           value={name}
           placeholder="Name"
           onChange={(e) => setName(e.target.value)}
         />
-              <br></br>
-              <label>Contact Number</label>
+        <br></br>
+        <label>Contact Number</label>
+        <br></br>
         <input
           type="text"
           value={mobile}
           placeholder="Contact"
           onChange={(e) => setMobile(e.target.value)}
         />
-              <br></br>
-              <label>Email</label>
+        <br></br>
+        <br></br>
+        <label>Email</label>
+        <br></br>
         <input
           type="text"
           value={email}
