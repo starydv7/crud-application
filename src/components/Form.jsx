@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import styles from "./navbar.module.css";
 const Form = () => {
     const [name, setName] = useState("");
     const [mobile, setMobile] = useState("");
@@ -28,7 +28,7 @@ const Form = () => {
          .catch((err) => {});
      };
   return (
-    <div>
+    <div className={styles.form}>
       <form onSubmit={handleSubmit}>
         <select value={role} onChange={(e) => setRole(e.target.value)}>
           <option value="/">Role</option>
