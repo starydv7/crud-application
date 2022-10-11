@@ -38,19 +38,19 @@ const Form = () => {
         <input
           type="text"
           value={name}
-          placeholder="Adults"
+          placeholder="Name"
           onChange={(e) => setName(e.target.value)}
         />
         <input
           type="text"
           value={mobile}
-          placeholder="Capacity"
+          placeholder="Contact"
           onChange={(e) => setMobile(e.target.value)}
         />
         <input
           type="text"
           value={email}
-          placeholder="Price"
+          placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
         />
         <button type="submit">Submit</button>
