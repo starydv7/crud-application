@@ -35,7 +35,6 @@ const Form = () => {
           <option value="FrontEnd">Front_End</option>
           <option value="backend">Backend</option>
         </select>
-       
         <input
           type="text"
           value={name}
@@ -48,16 +47,13 @@ const Form = () => {
           placeholder="Capacity"
           onChange={(e) => setMobile(e.target.value)}
         />
-
         <input
           type="text"
           value={email}
           placeholder="Price"
           onChange={(e) => setEmail(e.target.value)}
         />
-
         <button type="submit">Submit</button>
-
         <div className="message">{message ? <p>{message}</p> : null}</div>
       </form>
     </div>
