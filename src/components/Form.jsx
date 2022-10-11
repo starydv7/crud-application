@@ -46,6 +46,7 @@ const Form = () => {
           value={name}
           placeholder="Name"
           onChange={(e) => setName(e.target.value)}
+          className={styles.input}
         />
         <br></br>
         <label>Contact Number</label>
@@ -55,6 +56,7 @@ const Form = () => {
           value={mobile}
           placeholder="Contact"
           onChange={(e) => setMobile(e.target.value)}
+          className={styles.input}
         />
         <br></br>
         <br></br>
@@ -65,6 +67,7 @@ const Form = () => {
           value={email}
           placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
+          className={styles.input}
         />
         <br></br>
         <button type="submit">Submit</button>
