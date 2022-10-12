@@ -6,7 +6,8 @@ const Form = () => {
     const [email, setEmail] = useState("");
     const [role, setRole] = useState("");
     const [message, setMessage] = useState("");
-    const [linkedin, setLinkedin] = useState("");
+  const [linkedin, setLinkedin] = useState("");
+  const [age, setAge] = useState("");
      let handleSubmit = async (e) => {
        e.preventDefault();
        var DetailsObj = {
@@ -14,7 +15,8 @@ const Form = () => {
          mobile: mobile,
          role: role,
          email: email,
-         linkedin:linkedin,
+         linkedin: linkedin,
+         age:age,
 
        };
        fetch("https://apipawan3.herokuapp.com/users", {
@@ -85,8 +87,18 @@ const Form = () => {
           placeholder="Linkedin Id"
           onChange={(e) => setLinkedin(e.target.value)}
           className={styles.input}
-              />
-              <br></br>
+        />
+        <br></br>
+        <label>Age</label>
+        <br></br>
+        <input
+          type="text"
+          value={age}
+          placeholder="Age"
+          onChange={(e) => setAge(e.target.value)}
+          className={styles.input}
+        />
+        <br></br>
         <button type="submit" className={styles.btn}>
           Submit
         </button>

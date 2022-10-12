@@ -37,6 +37,18 @@ const HomePage = () => {
     };
   return (
     <div className={styles.homepage}>
+      <div>
+        <h3>
+          Sort by Role :-{" "}
+          <span>
+            <select onChange={sorthandle}>
+              <option value="/">Sort by Role</option>
+              <option value="desc">Backend</option>
+              <option value="asc">FrontEnd</option>
+            </select>
+          </span>
+        </h3>
+      </div>
       <table className={styles.table}>
         <tbody className={styles.flex - 1}>
           <tr className={styles.flex}>
@@ -56,8 +68,8 @@ const HomePage = () => {
               <td>{item.email}</td>
               <td>{item.role}</td>
               <td>{item.mobile}</td>
-              <td>{ item.linkedin}</td>
-              
+              <td>{item.linkedin}</td>
+
               {/* <td>
                 {" "}
                 <button onClick={Deletedata}>Delete</button>
