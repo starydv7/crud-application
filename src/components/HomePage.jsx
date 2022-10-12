@@ -55,9 +55,10 @@ const HomePage = () => {
             <th>Id</th>
             <th>Name</th>
             <th>Email</th>
-            {/* <th>Linkedin Id</th> */}
+            <th>Linkedin Id</th>
             <th>Role</th>
             <th>Conatct Number</th>
+            <th>Age</th>
             <th>Delete Data</th>
             <th>Edit Data</th>
           </tr>
@@ -66,9 +67,10 @@ const HomePage = () => {
               <td>{item.id}</td>
               <td>{item.name}</td>
               <td>{item.email}</td>
+              <td>{item.linkedin}</td>
               <td>{item.role}</td>
               <td>{item.mobile}</td>
-              <td>{item.linkedin}</td>
+              <td>{item.age}</td>
 
               {/* <td>
                 {" "}
