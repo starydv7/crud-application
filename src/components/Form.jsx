@@ -6,7 +6,7 @@ const Form = () => {
     const [email, setEmail] = useState("");
     const [role, setRole] = useState("");
     const [message, setMessage] = useState("");
-    const [url, setUrl] = useState("");
+    const [linkedin, setLinkedin] = useState("");
      let handleSubmit = async (e) => {
        e.preventDefault();
        var DetailsObj = {
@@ -14,7 +14,8 @@ const Form = () => {
          mobile: mobile,
          role: role,
          email: email,
-         url: url,
+         linkedin:linkedin,
+
        };
        fetch("https://apipawan3.herokuapp.com/users", {
          method: "POST",
@@ -58,7 +59,7 @@ const Form = () => {
         <label>Contact Number</label>
         <br></br>
         <input
-          type="text"
+          type="number"
           value={mobile}
           placeholder="Contact"
           onChange={(e) => setMobile(e.target.value)}
@@ -80,9 +81,9 @@ const Form = () => {
         <br></br>
         <input
           type="url"
-          value={url}
+          value={linkedin}
           placeholder="Linkedin Id"
-          onChange={(e) => setUrl(e.target.value)}
+          onChange={(e) => setLinkedin(e.target.value)}
           className={styles.input}
               />
               <br></br>
