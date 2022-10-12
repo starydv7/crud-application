@@ -1,6 +1,5 @@
-table >tbody>tr>td{
-    gap:50px;
-    text-align: center;
+.homepage{
+    margin-top: 20px;
 }
 .flex {
     border-radius: 5px;
