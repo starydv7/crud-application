@@ -17,6 +17,24 @@ const HomePage = () => {
    useEffect(() => {
      FetchData();
    }, []);
+    const sorthandle = (e) => {
+      const { value } = e.target;
+
+      if (value === "asc") {
+        const newdata = data.sort((a, b) => {
+          return a.cost - b.cost;
+        });
+        setData([...newdata]);
+        console.log(newdata);
+      }
+      if (value === "desc") {
+        const newdata = data.sort((a, b) => {
+          return b.cost - a.cost;
+        });
+        setData([...newdata]);
+        console.log(newdata);
+      }
+    };
   return (
     <div className={styles.homepage}>
       <table className={styles.table}>
