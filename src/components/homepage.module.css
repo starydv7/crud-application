@@ -1,0 +1,29 @@
+table >tbody>tr>td{
+    gap:50px;
+    text-align: center;
+}
+.flex {
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+    gap: 30px;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: 300px;
+    color: gold;
+}
+.flex-1{
+    gap: 30px;
+    margin-left: 30px;
+}
+.table{
+    margin-left: 33%;
+  
+    justify-content: space-evenly;
+}
